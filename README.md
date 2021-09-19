@@ -1,0 +1,2 @@
+# -objTapi.I
+Const $LINEADDRESSTYPE_PHONENUMBER = "&amp;H1" Const $LINEMEDIAMODE_INTERACTIVEVOICE = "&amp;H4" Const $TAPI3_ALL_TAPI_EVENTS = "&amp;H1FFFF" Local  $lAddressType = $LINEADDRESSTYPE_PHONENUMBER  Local $txtAddressName = "LineName" ;Name of Line Local $Number = "123456" ; Number to call  $objTapi = ObjCreate("TAPI.TAPI.1") $mapper = ObjCreate("DispatchMapper.DispatchMapper.1") $objTapi.Initialize $objTapi.EventFilter = $TAPI3_ALL_TAPI_EVENTS
